@@ -1,4 +1,4 @@
 all: build
 
 build:
-	go build -o workflow/main
+	go build -o bin/esa-alfred

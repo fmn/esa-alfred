@@ -12,7 +12,7 @@ const (
 )
 
 func newEsaClient() *esa.Client {
-	accessToken := os.Getenv(EnvNameEsaAccessToken)
+	accessToken := os.Getenv(envNameEsaAccessToken)
 	return esa.New(&esa.Config{AccessToken: accessToken})
 }
 

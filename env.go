@@ -1,6 +1,6 @@
 package main
 
 const (
-	EnvNameEsaAccessToken     = "ESA_ACCESS_TOKEN"
-	EnvNameEsaDefaultTeamName = "ESA_DEFAULT_TEAM_NAME"
+	envNameEsaAccessToken     = "ESA_ACCESS_TOKEN"
+	envNameEsaDefaultTeamName = "ESA_DEFAULT_TEAM_NAME"
 )

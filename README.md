@@ -4,7 +4,7 @@
 
 # 使い方
 
-1. esa-alfredをDLし、インストールします。
+1. [esa-alfred.alfredworkflow](https://github.com/fmn/esa-alfred/releases) をDLし、インストールします。
 1. workflowの画面を開いて、環境変数を設定してください。
     <img width="849" alt="alfred_preferences" src="https://cloud.githubusercontent.com/assets/875231/22183716/57b68078-e107-11e6-9300-0aeeeaf300fa.png">
 1. 下記の環境変数を設定してください。

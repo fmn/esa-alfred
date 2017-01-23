@@ -5,7 +5,7 @@ import (
 
 	"github.com/codegangsta/cli"
 	"github.com/pascalw/go-alfred"
-	esa "github.com/yuichiro-h/go-esa"
+	"github.com/yuichiro-h/go-esa"
 
 	"os"
 )
@@ -14,7 +14,7 @@ func searchCommand(c *cli.Context) {
 	var query = strings.Join(c.Args(), " ")
 
 	client := newEsaClient()
-	teamName := os.Getenv(EnvNameEsaDefaultTeamName)
+	teamName := os.Getenv(envNameEsaDefaultTeamName)
 
 	response := alfred.NewResponse()
 	res, err := client.GetTeamPosts(teamName, &esa.GetTeamPostsRequest{
@@ -35,7 +35,7 @@ func searchCommand(c *cli.Context) {
 	posts := res.Posts
 
 	for _, post := range posts {
-		var title = post.Name
+		title := post.Name
 
 		if post.Category != nil {
 			title = *post.Category + "/" + title
